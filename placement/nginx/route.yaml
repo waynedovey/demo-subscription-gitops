@@ -1,7 +1,7 @@
 kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
-  name: nginx
+  name: cloud
 spec:
   to:
     kind: Service
@@ -9,6 +9,8 @@ spec:
     weight: 100
   port:
     targetPort: 8080
+  selector:
+    app.kubernetes.io/name: pacman
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect
