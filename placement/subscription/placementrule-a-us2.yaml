@@ -1,17 +1,16 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: PlacementRule
 metadata:
-  name: nginx-placement
-  namespace: nginx
+  name: nginx-placement-a-us2
+  namespace: provider
   labels:
-    app: nginx-placement
+    app: cloud
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
       status: "True"
-  #clusters:
-  #- name: gcp1-hive
   clusterSelector:
     matchLabels:
-      vendor: OpenShift
+      cloud: Amazon
+      region: us-east-2
   #clusterReplicas: 1  #Apply to how many matched clusters, default is ALL

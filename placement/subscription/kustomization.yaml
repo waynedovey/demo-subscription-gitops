@@ -2,6 +2,12 @@ resources:
 - namespace.yaml
 #- secret.yaml
 - channel.yaml
-- placementrule.yaml
-- subscription-nginx-placement.yaml
+- placementrule-a-us1.yaml
+- placementrule-a-us2.yaml
+- placementrule-a-eu1.yaml
+- placementrule-a-eu3.yaml
+- subscription-provider-a-us1.yaml
+- subscription-provider-a-us2.yaml
+- subscription-provider-a-eu1.yaml
+- subscription-provider-a-eu3.yaml
 - application.yaml
