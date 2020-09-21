@@ -24,7 +24,7 @@ spec:
         - name: CLOUD_PROVIDER
           value: "Amazon"
         - name: ZONE
-          value: "us-east-2"
+          value: "us-east-1"
         volumeMounts:
           - mountPath: /app/provider
             name: cache-provider
