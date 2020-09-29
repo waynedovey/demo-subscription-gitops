@@ -1,3 +1,4 @@
+namespace: provider
 resources:
 - namespace.yaml
 #- secret.yaml
@@ -6,8 +7,12 @@ resources:
 - placementrule-a-us2.yaml
 - placementrule-a-eu1.yaml
 - placementrule-a-eu3.yaml
+- placementrule-g-eu3.yaml
+- placementrule-a-uw1.yaml
 - subscription-provider-a-us1.yaml
 - subscription-provider-a-us2.yaml
 - subscription-provider-a-eu1.yaml
 - subscription-provider-a-eu3.yaml
+- subscription-provider-g-eu3.yaml
+- subscription-provider-a-uw1.yaml
 - application.yaml

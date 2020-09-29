@@ -3,16 +3,16 @@ kind: Deployment
 metadata:
   name: nginx-placement
   labels:
-    app.kubernetes.io/name: nginx-g-3
+    app.kubernetes.io/name: nginx-a-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: nginx-g-3
+      app.kubernetes.io/name: nginx-a-2
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: nginx-g-3
+        app.kubernetes.io/name: nginx-a-2
     spec:
       containers:
       - name: nginx
