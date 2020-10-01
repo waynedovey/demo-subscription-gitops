@@ -9,7 +9,7 @@ metadata:
   labels:
     app: cloud
 spec:
-  channel: provider/gitops
+  channel: demo/gitops
   placement:
     placementRef:
       name: cloud-provider-a-us3

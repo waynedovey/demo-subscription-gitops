@@ -4,8 +4,8 @@ kind: Namespace
 metadata:
   name: demo
 ---
-  apiVersion: v1
-  kind: Namespace
-  metadata:
-    name: provider
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: provider
   

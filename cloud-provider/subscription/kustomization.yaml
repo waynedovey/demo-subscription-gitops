@@ -1,4 +1,3 @@
-namespace: provider
 resources:
 - namespace.yaml
 #- secret.yaml
