@@ -1,12 +1,21 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: blue-nginx-service
+  annotations:
+    argocd.argoproj.io/sync-wave: "1"
+  creationTimestamp: null
+  labels:
+    app: blue
+    app.kubernetes.io/instance: blue
+  name: blue
 spec:
-  selector:
-    app: nginx
   ports:
-    - name: http
-      protocol: TCP
-      port: 8080
-      targetPort: 8080
+  - name: 8080-tcp
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: blue
+    deploymentconfig: blue
+  sessionAffinity: None
+  type: ClusterIP
