@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/host.generated: "true"
+    argocd.argoproj.io/sync-wave: "1"
+  creationTimestamp: null
+  labels:
+    app: blue
+    app.kubernetes.io/instance: blue
+  name: blue
+spec:
+  port:
+    targetPort: 8080-tcp
+  to:
+    kind: Service
+    name: blue-nginx-service
+    weight: 100
+status:
+  ingress:
+    - conditions:
+        - status: 'True'
+          type: Admitted
